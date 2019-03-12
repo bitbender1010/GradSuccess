@@ -26,6 +26,7 @@ const Header = ({ siteTitle }) => (
           color: "white",
           fontWeight: "700",
           fontSize: ".9em",
+          marginBottom: '0'
         }}
       >
         <Link to="/Admissions">Admissions</Link>
