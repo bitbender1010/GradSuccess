@@ -17,7 +17,7 @@ const IndexPage = () => (
       title="Apply With Confidence"
       text="There is something very important that should be here that we do not have currently however, we're going to be putting it in very very soon"
     />
-    <PryButton />
+    <PryButton text="Get the help you need"/>
     <UniDivider />
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
