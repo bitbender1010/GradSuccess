@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-const TitleAndText = ({title, text}) => (
+const TitleAndText = ({title, text, buttonUrl}) => (
     <div>
         <h2 style={{
             color: '#00a99d',
