@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,700');
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,700");
 
-@import url('https://fonts.googleapis.com/css?family=Aleo:400,700');
+@import url("https://fonts.googleapis.com/css?family=Aleo:400,700");
 
 html {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -11,7 +11,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #F8F8F8;
+  background: #f8f8f8;
 }
 article,
 aside,
@@ -47,7 +47,7 @@ template {
 a {
   background-color: transparent;
   text-decoration: none;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   color: #47dcbc;
   -webkit-text-decoration-skip: objects;
 }
@@ -68,10 +68,14 @@ strong {
 dfn {
   font-style: italic;
 }
+
+button {
+  font-family: "Poppins", sans-serif;
+}
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
-  font-family: 'Aleo', serif;
+  font-family: "Aleo", serif;
 }
 mark {
   background-color: #ff0;
@@ -239,7 +243,7 @@ h1 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: 'Aleo', serif;
+  font-family: "Aleo", serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 2.25rem;
@@ -390,7 +394,7 @@ p {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 figure {
   margin-left: 0;

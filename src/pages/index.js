@@ -6,8 +6,8 @@ import Image from "../components/image"
 import SEO from "../components/seo"
 import HomeHero from "../components/homeHero"
 import TitleAndText from "../components/titleNtext"
-import UniDivider from "../components/uniDivider";
-import Steps from "../components/steps";
+import UniDivider from "../components/uniDivider"
+import Steps from "../components/steps"
 
 const IndexPage = () => (
   <Layout>
