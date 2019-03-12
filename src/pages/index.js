@@ -6,7 +6,8 @@ import Image from "../components/image"
 import SEO from "../components/seo"
 import HomeHero from "../components/homeHero"
 import TitleAndText from "../components/titleNtext"
-import UniDivider from "../components/uniDivider";
+import UniDivider from "../components/uniDivider"
+import PryButton from "../components/pryButton";
 
 const IndexPage = () => (
   <Layout>
@@ -16,6 +17,7 @@ const IndexPage = () => (
       title="Apply With Confidence"
       text="There is something very important that should be here that we do not have currently however, we're going to be putting it in very very soon"
     />
+    <PryButton />
     <UniDivider />
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
