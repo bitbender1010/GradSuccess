@@ -1,4 +1,5 @@
 import React from 'react'
+import PryButton from "../components/pryButton";
 
 const HomeHero = () => (
     <div style={{
@@ -21,6 +22,7 @@ const HomeHero = () => (
             margin: '0 auto',
             maxWidth: '600px'
         }}>We help young graduates and career people achieve their long and short term academic and professional goals</p>
+        <PryButton text="Get Started"/>
     </div>
 )
 
