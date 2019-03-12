@@ -13,7 +13,7 @@ const PryButton = () => (
         backgroundColor: 'yellow',
         border: 'none',
         margin: '0px auto'
-    }}> Get the help you need </button>
+    }}> {text} </button>
 </div>
 );
 
