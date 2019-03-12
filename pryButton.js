@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from "gatsby"
 
-const PryButton = () => (
+const PryButton = ({text}) => (
 <div>
     {/* */}
     <button  style={{
@@ -13,7 +13,7 @@ const PryButton = () => (
         backgroundColor: 'yellow',
         border: 'none',
         margin: '0px auto'
-    }}> {text} </button>
+    }}>  </button>
 </div>
 );
 
