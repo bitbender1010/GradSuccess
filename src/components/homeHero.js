@@ -1,6 +1,7 @@
 import React from "react"
 import PryButton from "../components/pryButton"
 
+
 const HomeHero = ({button, imgUrl}) => (
   <div
     style={{

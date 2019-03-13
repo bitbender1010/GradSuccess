@@ -8,6 +8,7 @@ import HomeHero from "../components/homeHero"
 import TitleAndText from "../components/titleNtext"
 import UniDivider from "../components/uniDivider"
 import Steps from "../components/steps"
+import FeaturedTestimonial from "../components/featuredTestimonial";
 
 const IndexPage = () => (
   <Layout>
@@ -19,6 +20,7 @@ const IndexPage = () => (
     />
     <UniDivider />
     <Steps />
+    <FeaturedTestimonial />
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
     </div>
