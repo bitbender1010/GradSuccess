@@ -1,11 +1,11 @@
 import React from "react"
 import PryButton from "../components/pryButton"
 
-const HomeHero = () => (
+const HomeHero = ({button, imgUrl}) => (
   <div
     style={{
-      background:
-        "linear-gradient(295deg, rgba(0,169,157,0.7315301120448179) 0%, rgba(0,169,157,1) 100%), url('./static/images/bg-image.jpg')",
+      background: button ?
+        `linear-gradient(295deg, rgba(0,169,157,0.5) 0%, rgba(0,169,157,1) 100%), ${imgUrl}` : `linear-gradient(295deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,.7) 100%),${imgUrl}`,
       height: "450px",
       display: "flex",
       flexDirection: "column",
@@ -37,7 +37,7 @@ const HomeHero = () => (
         margin: "1em auto 0",
       }}
     >
-      <PryButton text="Get Started" />
+      {button && <PryButton text={button} />}
     </div>
   </div>
 )
