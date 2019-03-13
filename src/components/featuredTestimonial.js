@@ -12,6 +12,7 @@ const ImgDivStyles = {
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
+    minHeight: '400px'
 }
 
 const FeaturedTestimonial =  () => (
@@ -22,7 +23,8 @@ const FeaturedTestimonial =  () => (
     }}>
         <div style={{
             flex: 1,
-            padding: '3em 5em 3em 0'
+            padding: '3em 5em 3em 0',
+            alignSelf: 'center'
         }}>
             <p>
                 I never expected getting an admission to an ivy league school to be so professional and straight-forward. GradSuccess team really did all of the heavy lifting allowing me align my thoughts and clearly lay out my goals, I was pleasantly surprised at the end of the process.
