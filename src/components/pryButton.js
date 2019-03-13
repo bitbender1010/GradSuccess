@@ -5,7 +5,7 @@ class PryButton extends React.Component {
   render() {
     return (
       <div>
-        <button style={ButtonStyles}>{this.props.text}</button>
+        <button style={this.props.small ? SmallButtonStyles : BigButtonStyles}>{this.props.text}</button>
       </div>
     )
   }
@@ -13,7 +13,7 @@ class PryButton extends React.Component {
 
 PryButton = Radium(PryButton)
 
-const ButtonStyles = {
+const BigButtonStyles = {
   color: "#111",
   textAlign: "center",
   minWidth: "200px",
@@ -32,4 +32,26 @@ const ButtonStyles = {
   },
   transition: "all .2s ease-out",
 }
+
+const SmallButtonStyles = {
+  color: "#111",
+  textAlign: "center",
+  minWidth: "100px",
+  minHeight: "30px",
+  fontSize: "12px",
+  background: "yellow",
+  border: "none",
+  margin: "0px auto",
+  fontFamily: `"Poppins", sans-serif`,
+  fontWeight: "700",
+  cursor: "pointer",
+  textShadow: "1px 1px 3px rgba(0,0,0,0.2)",
+  ":hover": {
+    background: "#47dcbc",
+    color: "yellow",
+  },
+  transition: "all .2s ease-out",
+}
+
+
 export default PryButton

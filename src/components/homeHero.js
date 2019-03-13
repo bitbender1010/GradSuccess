@@ -14,6 +14,8 @@ class HomeHero extends React.Component {
   render() {
     const button = this.props.button
     const imgUrl = this.props.imgUrl
+    const title = this.props.title
+    const text = this.props.text
     return (
       <div
         style={{
@@ -33,7 +35,7 @@ class HomeHero extends React.Component {
             textTransform: "capitalize",
           }}
         >
-          Get expert help with your applications
+          {title}
         </h1>
         <p
           style={{
@@ -43,8 +45,7 @@ class HomeHero extends React.Component {
             maxWidth: "600px",
           }}
         >
-          We help young graduates and career people achieve their long and short
-          term academic and professional goals
+          {text}
         </p>
         <div
           style={{
