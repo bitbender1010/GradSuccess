@@ -1,26 +1,16 @@
 import React from 'react'
-import TitleAndText from "../components/titleNtext"
 import PryButton from './pryButton';
 
 const flexCount = {
     display: 'flex',
     /*border: '2px solid blue',*/
-    padding: '100px',
-    background: 'lightgray'
+    padding: '60px',
+    background: 'black',
+    opacity: '0.6',
+    margin: '0px auto'
 }
 
-const lowerCount = {
-    background: 'lightblue',
-    textAlign: 'center'
-}
-
-const slash = {
-    color: 'yellow',
-    fontSize: '30px',
-    fontWeight: 'bold'
-}
-
-const countDivider =  () => (
+const CountDivider =  () => (
 <div>
     <div style={flexCount}>
         <div style={{
@@ -30,11 +20,15 @@ const countDivider =  () => (
         }}>
         <div style={{
             color: '#00a99d',
-            fontSize: '30px',
-            fontWeight: 'bolder'
+            fontWeight: 'bolder',
+            fontSize: '40px',
+            fontFamily: '"Aleo", serif',
+            paddingBottom: '15px'
         }}> 3000+ </div>
         <div style={{
-            color: 'black'
+            color: 'white',
+            fontSize: '20px',
+            fontFamily: '"Poppins", sans-serif'
         }}> Consulting Minutes </div>
         </div>
 
@@ -46,11 +40,16 @@ const countDivider =  () => (
         <div style={{
             color: '#00a99d',
             fontSize: '30px',
-            fontWeight: 'bolder'
+            fontWeight: 'bolder',
+            fontSize: '40px',
+            fontFamily: '"Aleo", serif',
+            paddingBottom: '15px'
         }}> 100+ </div>
         <div style={{
-            color: 'black'
-        }}> Consulting Minutes </div>
+            color: 'white',
+            fontSize: '20px',
+            fontFamily: '"Poppins", sans-serif'
+        }}> Consulting Satisfied </div>
         </div>
 
         <div style={{
@@ -61,33 +60,19 @@ const countDivider =  () => (
         <div style={{
             color: '#00a99d',
             fontSize: '30px',
-            fontWeight: 'bolder'
+            fontWeight: 'bolder',
+            fontSize: '40px',
+            fontFamily: '"Aleo", serif',
+            paddingBottom: '15px'
         }}> ~90% </div>
         <div style={{
-            color: 'black'
-        }}> Successful Clients </div>
-        </div>
-    </div>
-    {/* Get Started */}
-    <div style={lowerCount}>
-        <div style={{
+            color: 'white',
             fontSize: '20px',
-            fontWeight: 'bold'
-        }}> Get Expert Help With Your Application </div>
-        <div> CV REDRAFTS <span style={slash}> / </span> 
-        ESSAY REDRAFTS <span style={slash}> / </span> 
-        CV REVIEWS <span style={slash}> / </span> 
-        ESSAY REVIEWS </div>
-        <PryButton text="Get Started"/>
-        <button style={{
-            border: '2px solid yellow',
-            minWidth: '200px',
-            minHeight: '50px',
-            margin: '0px auto',
-            outline: 'none'
-        }}> Learn More </button>
+            fontFamily: '"Poppins", sans-serif'
+        }}><p> Successful Clients </p> </div>
+        </div>
     </div>
 </div>
 )
 
-export default countDivider
+export default CountDivider

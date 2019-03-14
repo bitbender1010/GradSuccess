@@ -10,7 +10,7 @@ import TitleAndText from "../components/titleNtext"
 import UniDivider from "../components/uniDivider"
 import Steps from "../components/steps"
 import FeaturedTestimonial from "../components/featuredTestimonial"
-import CountDivider from "../components/countDivider"
+import BigCountCTA from "../components/bigCountCTA"
 
 class IndexPage extends React.Component {
   constructor(props) {
@@ -56,8 +56,7 @@ class IndexPage extends React.Component {
           <h2>Simple Modal here</h2>
         </Modal>
         {/* COUNT */}
-        <CountDivider />
-        
+        <BigCountCTA />
       </Layout>
     )
   }
