@@ -10,6 +10,7 @@ import TitleAndText from "../components/titleNtext"
 import UniDivider from "../components/uniDivider"
 import Steps from "../components/steps"
 import FeaturedTestimonial from "../components/featuredTestimonial"
+import CountDivider from "../components/countDivider"
 
 class IndexPage extends React.Component {
   constructor(props) {
@@ -44,17 +45,19 @@ class IndexPage extends React.Component {
         <TitleAndText
           title="Apply With Confidence"
           text="There is something very important that should be here that we do not have currently however, we're going to be putting it in very very soon"
-        />
+          />
         <UniDivider />
         <Steps />
         <FeaturedTestimonial />
-        <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
+        {/* <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
           <Image />
-        </div>
-        <Link to="/page-2/">Go to page 2</Link>
+        </div> */}
         <Modal open={open} onClose={this.onCloseModal} center>
           <h2>Simple Modal here</h2>
         </Modal>
+        {/* COUNT */}
+        <CountDivider />
+        
       </Layout>
     )
   }
