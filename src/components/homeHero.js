@@ -22,6 +22,9 @@ class HomeHero extends React.Component {
           background: button
             ? `linear-gradient(295deg, rgba(0,169,157,0.5) 0%, rgba(0,169,157,1) 100%), ${imgUrl}`
             : `linear-gradient(295deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,.7) 100%),${imgUrl}`,
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: button ? 'top' : 'center',
+            backgroundSize:'cover',
           height: "450px",
           display: "flex",
           flexDirection: "column",
