@@ -34,14 +34,14 @@ class IndexPage extends React.Component {
       <Layout>
         <SEO title="Home" keywords={[`success`, `application`, `university`]} />
         <HomeHero
-          title="Welcome to the Admissions Center"
+          title="Welcome to the Career Center"
           text="We help young graduates and career people achieve their long and short
         term academic and professional goals"
-          imgUrl="url('./static/images/admissionsbg.jpg')"
+          imgUrl="url('./static/images/careersbg.jpg')"
           openModal={this.onOpenModal}
         />
         <TitleAndText
-          title="Admissions Have Never Been This Exciting"
+          title="Career Success Has Never Been This Simple"
           text="University admissions is a daunting process, from personal statements, reference
           letters and several certificating tests (IELTS, GMAT &amp; GMAT to name a few), there’s
           so much involved. 
