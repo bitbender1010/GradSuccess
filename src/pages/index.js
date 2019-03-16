@@ -11,6 +11,7 @@ import UniDivider from "../components/uniDivider"
 import Steps from "../components/steps"
 import FeaturedTestimonial from "../components/featuredTestimonial"
 import BigCountCTA from "../components/bigCountCTA"
+import Footer from "../pages/Footer"
 
 class IndexPage extends React.Component {
   constructor(props) {
@@ -57,6 +58,7 @@ class IndexPage extends React.Component {
         </Modal>
         {/* COUNT */}
         <BigCountCTA />
+        <Footer /> 
       </Layout>
     )
   }
