@@ -10,6 +10,7 @@ import TitleAndText from "../../components/titleNtext"
 import UniDivider from "../../components/uniDivider"
 import Steps from "../../components/steps"
 import FeaturedTestimonial from "../../components/featuredTestimonial"
+import Footer from '../../components/Footer'
 
 class IndexPage extends React.Component {
   constructor(props) {
@@ -50,13 +51,10 @@ class IndexPage extends React.Component {
           with cutting-edge services ranging from reviews, redrafts and one-on-one coaching
           about preferred options."
         />
+        
         <UniDivider />
         <Steps />
         <FeaturedTestimonial />
-        <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-          <Image />
-        </div>
-        <Link to="/page-2/">Go to page 2</Link>
         <Modal open={open} onClose={this.onCloseModal} center>
           <h2>Simple Modal here</h2>
         </Modal>

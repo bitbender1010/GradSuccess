@@ -3,7 +3,6 @@ import { Link } from "gatsby"
 import Modal from "react-responsive-modal"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 import HomeHero from "../components/homeHero"
 import TitleAndText from "../components/titleNtext"
@@ -11,7 +10,6 @@ import UniDivider from "../components/uniDivider"
 import Steps from "../components/steps"
 import FeaturedTestimonial from "../components/featuredTestimonial"
 import BigCountCTA from "../components/bigCountCTA"
-import Footer from "../pages/Footer"
 
 class IndexPage extends React.Component {
   constructor(props) {
@@ -50,15 +48,10 @@ class IndexPage extends React.Component {
         <UniDivider />
         <Steps />
         <FeaturedTestimonial />
-        {/* <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-          <Image />
-        </div> */}
         <Modal open={open} onClose={this.onCloseModal} center>
           <h2>Simple Modal here</h2>
         </Modal>
-        {/* COUNT */}
         <BigCountCTA />
-        <Footer /> 
       </Layout>
     )
   }

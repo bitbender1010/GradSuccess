@@ -5,8 +5,6 @@ import PackageCardElement from './packageCardElement';
 const PackageCards = () => (
     <div>
         <PackageCardElement imgUrl title text />
-        <PackageCardElement imgUrl title text />
-        <PackageCardElement imgUrl title text />
     </div>
 )
 
