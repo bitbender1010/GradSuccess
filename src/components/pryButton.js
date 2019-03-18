@@ -31,6 +31,7 @@ const BigButtonStyles = {
     color: "yellow",
   },
   transition: "all .2s ease-out",
+  boxShadow: '0 3px 10px rgba(0,0,0,0.5)'
 }
 
 const SmallButtonStyles = {
@@ -49,8 +50,10 @@ const SmallButtonStyles = {
   ":hover": {
     background: "#47dcbc",
     color: "yellow",
+    boxShadow: '0 1px 10px rgba(0,0,0,0.2)'
   },
   transition: "all .2s ease-out",
+  boxShadow: '0 3px 10px rgba(0,0,0,0.5)'
 }
 
 

@@ -29,12 +29,12 @@ const Header = ({ siteTitle }) => (
           marginBottom: '0'
         }}
       >
-        <Link to="/Admissions">Admissions</Link>
-        <Link to="/Careers">Job/Careers</Link>
-        <Link to="/Scholarships">Scholarships</Link>
-        <Link to="About">About Us</Link>
-        <Link to="Blog">Blog</Link>
-        <Link to="Contact">Contact</Link>
+        <Link to="/Admissions" activeStyle={{color: 'white'}} >Admissions</Link>
+        <Link to="/Careers" activeStyle={{color: 'white'}} >Job/Careers</Link>
+        <Link to="/Scholarships" activeStyle={{color: 'white'}} >Scholarships</Link>
+        <Link to="About" activeStyle={{color: 'white'}} >About Us</Link>
+        <Link to="Blog" activeStyle={{color: 'white'}} >Blog</Link>
+        <Link to="Contact" activeStyle={{color: 'white'}}>Contact</Link>
       </ul>
     </div>
   </header>

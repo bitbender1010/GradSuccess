@@ -12,7 +12,7 @@ const slash = {
 }
 
 const Footer = () => (
-  <div style={{margin: '0 auto'}}>
+  <div style={{ margin: "0 auto" }}>
     <div
       style={{
         display: "flex",
@@ -30,7 +30,6 @@ const Footer = () => (
         }}
       >
         <div>
-          {" "}
           Home Page <span style={slash}> / </span>
           Services and Prices <span style={slash}> / </span>
           About Us <span style={slash}> / </span>
@@ -39,13 +38,11 @@ const Footer = () => (
           Privacy Policy <span style={slash}> / </span>
           Website Terms of Use <span style={slash}> / </span>
           Disclaimer <span style={slash}> / </span>
-          Client Terms of Service{" "}
-        </div>{" "}
+          Client Terms of Service
+        </div>
         <br /> <br />
         <div>
-          {" "}
-          GradSuccess 1171 S. Robertson Blvd. #140 Los Angeles CA 90035 +1 (310)
-          815-9553 © 2019 GradSuccess{" "}
+          GradSuccess Suite A54 Prima-Tek Plaza Egbeda Lagos
         </div>
       </div>
       <div
@@ -53,8 +50,6 @@ const Footer = () => (
           width: "40%",
         }}
       >
-        {" "}
-        {/* Right Part*/}
         <div style={{}}>
           <Link to="/">
             <div
@@ -101,12 +96,13 @@ const Footer = () => (
             }}
           />
         </div>
-        
       </div>
-      
     </div>
-    © {new Date().getFullYear()}, Built By
-            <a href="https://www.phosmobile.org">PhosMobile</a>
+    <div style={{width: '70%',
+  margin: '0 auto'}}>
+    © {new Date().getFullYear()}, Built By 
+    <a href="https://www.phosmobile.org"> PhosMobile</a>
+    </div>
   </div>
 )
 
