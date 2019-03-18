@@ -25,7 +25,7 @@ class HomeHero extends React.Component {
             backgroundRepeat: 'no-repeat',
             backgroundPosition: button ? 'top' : 'center',
             backgroundSize:'cover',
-          height: "450px",
+          height: button ? "450px" : '300px',
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",

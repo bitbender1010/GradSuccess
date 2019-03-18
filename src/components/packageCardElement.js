@@ -2,7 +2,7 @@ import React from "react"
 import PryButton from "./pryButton"
 import {Link} from 'gatsby'
 
-const PackageCardElement = ({ imgUrl, title, text }) => (
+const PackageCardElement = ({ imgUrl, title, text, buttonUrl }) => (
   <div
     style={{
       background: "#19a99d",
@@ -20,7 +20,7 @@ const PackageCardElement = ({ imgUrl, title, text }) => (
     >
       <h4 style={{marginBottom: '5px'}}>{title}</h4>
       <p style={{ fontSize: "13px", lineHeight: 1.2 }}>{text}</p>
-      <Link><PryButton small={true} text="Get Started" /></Link>
+      <Link to={buttonUrl}><PryButton small={true} text="Get Started" /></Link>
     </div>
   </div>
 )
