@@ -2,10 +2,13 @@ import React from "react"
 import { Link } from "gatsby"
 import agenda from "../images/agenda.svg"
 import pdf from "../images/pdf.svg"
+import PryButton from "../components/pryButton"
 
 
 const SampleEssays = () => (
-<div>
+<div style={{
+    padding: '30px 0px'
+}}>
     <div style={{
         textAlign: 'center'
     }}> <h2> Read Our Sample Essays </h2> </div>
@@ -133,6 +136,12 @@ const SampleEssays = () => (
     </div>
 
 </div>
+            <div style={{
+                display: 'flex',
+                justifyContent: 'center'
+            }}>
+            <PryButton text="View Samples" />
+            </div>
 </div>
 )
 
