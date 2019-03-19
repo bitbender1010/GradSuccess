@@ -11,8 +11,9 @@ import UniDivider from "../../components/uniDivider"
 import Steps from "../../components/steps"
 import FeaturedTestimonial from "../../components/featuredTestimonial"
 import Footer from '../../components/Footer'
-import PackageCards from "../../components/packageCards";
+import PackageCards from "../../components/packageCards"
 import WhyChooseUs from "../../components/whyChooseUs";
+import SampleEssays from "../../components/sampleEssays"
 
 class IndexPage extends React.Component {
   constructor(props) {
@@ -57,6 +58,7 @@ class IndexPage extends React.Component {
         <UniDivider />
         <WhyChooseUs title="Why Choose Us For Your Admission Process" imgUrl="url('./static/images/admissionsbg.jpg')" />
         <FeaturedTestimonial />
+        <SampleEssays />
         <Modal open={open} onClose={this.onCloseModal} center>
           <h2>Simple Modal here</h2>
         </Modal>
