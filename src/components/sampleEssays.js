@@ -37,42 +37,50 @@ const SampleEssays = () => (
         </div>
 
         <div style={{
-            display: 'flex'
+            display: 'flex',
+            fontFamily: 'popins'
         }}> 
         <span style={{
             width: '200px',
             textAlign: 'right',
-            paddingRight: '30px'
+            paddingRight: '30px',
+            color: 'gray'
         }}> Paper Title: </span> <span> Online Education </span>
         </div>
 
         {/* second part*/}
         <div style={{
-            display: 'flex'
+            display: 'flex',
+            fontFamily: 'popins'
         }}> <span style={{
             width: '200px',
             textAlign: 'right',
-            paddingRight: '30px'
+            paddingRight: '30px',
+            color: 'gray'
         }}> Academic Level: </span> <span> College </span>
         </div>
 
         {/* second part*/}
         <div style={{
-            display: 'flex'
+            display: 'flex',
+            fontFamily: 'popins'
         }}> <span style={{
             width: '200px',
             textAlign: 'right',
-            paddingRight: '30px'
+            paddingRight: '30px',
+            color: 'gray'
         }}> Discipline: </span> <span> Ethics </span>
         </div>
 
         {/* second part*/}
         <div style={{
-            display: 'flex'
+            display: 'flex',
+            fontFamily: 'popins'
         }}> <span style={{
             width: '200px',
             textAlign: 'right',
-            paddingRight: '30px'
+            paddingRight: '30px',
+            color: 'gray'
         }}> Paper Format: </span> <span> APA </span>
         </div>
 </div>
@@ -95,53 +103,56 @@ const SampleEssays = () => (
             </div>
     
             <div style={{
-                display: 'flex'
+                display: 'flex',
+                fontFamily: 'popins'
             }}> 
             <span style={{
                 width: '200px',
                 textAlign: 'right',
-                paddingRight: '30px'
+                paddingRight: '30px',
+                color: 'gray'
             }}> Paper Title: </span> <span> Online Education </span>
             </div>
     
             {/* second part*/}
             <div style={{
-                display: 'flex'
+                display: 'flex',
+                fontFamily: 'popins'
             }}> <span style={{
                 width: '200px',
                 textAlign: 'right',
-                paddingRight: '30px'
+                paddingRight: '30px',
+                color: 'gray'
             }}> Academic Level: </span> <span> College </span>
             </div>
     
             {/* second part*/}
             <div style={{
-                display: 'flex'
+                display: 'flex',
+                fontFamily: 'popins'
             }}> <span style={{
                 width: '200px',
                 textAlign: 'right',
-                paddingRight: '30px'
+                paddingRight: '30px',
+                color: 'gray'
             }}> Discipline: </span> <span> Ethics </span>
             </div>
     
             {/* second part*/}
             <div style={{
-                display: 'flex'
+                display: 'flex',
+                fontFamily: 'popins'
             }}> <span style={{
                 width: '200px',
                 textAlign: 'right',
-                paddingRight: '30px'
+                paddingRight: '30px',
+                color: 'gray'
             }}> Paper Format: </span> <span> APA </span>
             </div>
     </div>
 
 </div>
-            <div style={{
-                display: 'flex',
-                justifyContent: 'center'
-            }}>
-            <PryButton text="View Samples" />
-            </div>
+
 </div>
 )
 
