@@ -41,7 +41,7 @@ class EssaysPage extends React.Component {
           justifyContent: 'center'
         }}>
         <div onClick={this.toggleTabs("review")} style={{
-          height: '70px',
+          height: '50px',
           width: '50%',
           border: 'none',
           outline: 'none',
@@ -49,30 +49,32 @@ class EssaysPage extends React.Component {
         }}>
           <button style={{
             border: 'none',
-            height: '70px',
+            height: '50px',
             width: '100%',
             background: 'black',
             opacity: '0.6',
             verticalAlign: 'middle',
             textAlign: 'center',
-            outline: 'none'
-          }}> <h3 style={{marginBottom: '0px', color: 'white'}}> Essay Review</h3> </button>
+            outline: 'none',
+            cursor: 'pointer'
+          }}> <h4 style={{marginBottom: '0px', color: this.state.reviewTab ? 'white' : '#19a99d'}}> Essay Review</h4> </button>
         </div>
         <div onClick={this.toggleTabs("redraft")} style={{
-          height: '70px',
+          height: '50px',
           width: '50%',
           border: 'none',
           outline: 'none'
         }}>
           <button style={{
-            height: '70px',
+            height: '50px',
             width: '100%',
             background: 'black',
             opacity: '0.6',
             border: 'none',
             outline: 'none',
-            verticalAlign: 'middle'
-          }}> <h3 style={{marginBottom: '0px', color: '#19a99d'}}> Essay Redraft </h3> </button>
+            verticalAlign: 'middle',
+            cursor: 'pointer'
+          }}> <h4 style={{marginBottom: '0px', color: this.state.redraftTab ? 'white' : '#19a99d'}}> Essay Redraft </h4> </button>
         </div>
         </div>
         {this.state.reviewTab && <div> <EssayReview /> </div>}
