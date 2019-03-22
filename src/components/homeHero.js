@@ -1,4 +1,5 @@
 import React from "react"
+import { jsx, css } from '@emotion/core'
 import PryButton from "../components/pryButton"
 
 class HomeHero extends React.Component {
@@ -18,7 +19,7 @@ class HomeHero extends React.Component {
     const text = this.props.text
     return (
       <div
-        style={{
+        css={{
           background: button
             ? `linear-gradient(295deg, rgba(0,169,157,0.5) 0%, rgba(0,169,157,1) 100%), ${imgUrl}`
             : `linear-gradient(295deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,.7) 100%),${imgUrl}`,
@@ -32,7 +33,7 @@ class HomeHero extends React.Component {
         }}
       >
         <h1
-          style={{
+          css={{
             color: "white",
             textAlign: "center",
             textTransform: "capitalize",
@@ -41,18 +42,18 @@ class HomeHero extends React.Component {
           {title}
         </h1>
         <p
-          style={{
+          css={{
             color: "white",
             textAlign: "center",
             margin: "0 auto",
-            maxWidth: "600px",
+            maxWidth: "600px"
           }}
         >
           {text}
         </p>
         <div
-          style={{
-            margin: "1em auto 0",
+          css={{
+            margin: "1em auto 0"
           }}
           onClick={this.openModal}
         >

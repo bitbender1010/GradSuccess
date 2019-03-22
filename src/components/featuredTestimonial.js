@@ -1,7 +1,11 @@
 import React from 'react'
 import PryButton from './pryButton';
+// this comment tells babel to convert jsx to calls to a function called jsx instead of React.createElement
+/** @jsx jsx */
+import { jsx, css } from '@emotion/core'
 
-const ImgDivStyles = {
+
+const ImgDivStyles = css({
     flex: 1,
     background: "linear-gradient(295deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,.7) 100%), url('./static/images/8years.jpeg')",
     backgroundSize: 'cover',
@@ -13,15 +17,15 @@ const ImgDivStyles = {
     justifyContent: 'center',
     alignItems: 'center',
     minHeight: '400px'
-}
+})
 
 const FeaturedTestimonial =  () => (
-    <div style={{
+    <div css={{
         display: 'flex',
         background: 'white',
         padding: '4em 10em'
     }}>
-        <div style={{
+        <div css={{
             flex: 1,
             padding: '3em 5em 3em 0',
             alignSelf: 'center'
@@ -31,8 +35,8 @@ const FeaturedTestimonial =  () => (
             </p>
             <h4>Damilola Kosibote</h4>
         </div>
-        <div style={ImgDivStyles}>
-            <h1 style={{
+        <div css={ImgDivStyles}>
+            <h1 css={{
                 fontSize: '1.3em',
                 lineHeight: '1.4em',
                 textAlign: 'center'

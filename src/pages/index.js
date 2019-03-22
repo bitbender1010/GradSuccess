@@ -2,6 +2,11 @@ import React from "react"
 import { Link } from "gatsby"
 import Modal from "react-responsive-modal"
 
+// this comment tells babel to convert jsx to calls to a function called jsx instead of React.createElement
+/** @jsx jsx */
+import { jsx, css } from '@emotion/core'
+import { ThemeProvider } from 'emotion-theming'
+
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import HomeHero from "../components/homeHero"
@@ -10,6 +15,11 @@ import UniDivider from "../components/uniDivider"
 import Steps from "../components/steps"
 import FeaturedTestimonial from "../components/featuredTestimonial"
 import BigCountCTA from "../components/bigCountCTA"
+
+
+const theme = {
+  color: 'red'
+}
 
 class IndexPage extends React.Component {
   constructor(props) {
@@ -31,6 +41,7 @@ class IndexPage extends React.Component {
   render() {
     const { open } = this.state
     return (
+      <ThemeProvider theme={theme}>
       <Layout>
         <SEO title="Home" keywords={[`success`, `application`, `university`]} />
         <HomeHero
@@ -52,7 +63,9 @@ class IndexPage extends React.Component {
           <h2>Simple Modal here</h2>
         </Modal>
         <BigCountCTA />
+        <h2 css={theme => ({ color: theme.color })}> HELLO </h2>
       </Layout>
+      </ThemeProvider>
     )
   }
 }

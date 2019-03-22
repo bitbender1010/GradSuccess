@@ -7,7 +7,7 @@ const Header = ({ siteTitle }) => (
     <div>
       <Link to="/">
         <div
-          style={{
+          css={{
             width: "150px",
             margin: ".5em auto .1em",
           }}
@@ -16,7 +16,7 @@ const Header = ({ siteTitle }) => (
         </div>
       </Link>
       <ul
-        style={{
+        css={{
           display: "flex",
           listStyle: "none",
           justifyContent: "space-around",
