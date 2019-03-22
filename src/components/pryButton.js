@@ -1,17 +1,16 @@
 import React from "react"
-import Radium from "radium"
+import {jsx} from '@emotion/core'
 
 class PryButton extends React.Component {
   render() {
     return (
       <div>
-        <button style={this.props.small ? SmallButtonStyles : BigButtonStyles}>{this.props.text}</button>
+        <button css={this.props.small ? SmallButtonStyles : BigButtonStyles}>{this.props.text}</button>
       </div>
     )
   }
 }
 
-PryButton = Radium(PryButton)
 
 const BigButtonStyles = {
   color: "#111",
