@@ -1,4 +1,5 @@
 import React from 'react'
+import{ jsx, css } from "@emotion/core"
 import PryButton from './pryButton';
 
 const lowerCount = {
@@ -15,25 +16,25 @@ const slash = {
 const LowerCTA =  () => (
     <div>
     {/* Get Started */}
-    <div style={lowerCount}>
-        <div style={{
+    <div css={lowerCount}>
+        <div css={{
             fontWeight: 'bold',
             color: 'white',
             paddingTop: '5%'
         }}><h2> Get Expert Help With Your Application </h2> </div>
-        <div><h4 style={{
+        <div><h4 css={{
             color: 'white',
             fontWeight: '500',
             fontFamily: '"Poppins", sans-serif'
-        }}> CV REDRAFTS <span style={slash}> / </span> 
-        ESSAY REDRAFTS <span style={slash}> / </span> 
-        CV REVIEWS <span style={slash}> / </span> 
+        }}> CV REDRAFTS <span css={slash}> / </span> 
+        ESSAY REDRAFTS <span css={slash}> / </span> 
+        CV REVIEWS <span css={slash}> / </span> 
         ESSAY REVIEWS </h4> </div>
-        <div style={{
+        <div css={{
             padding: '40px'
         }}>
         <PryButton text="Get Started" />
-        <button style={{
+        <button css={{
             border: '2px solid yellow',
             minWidth: '200px',
             minHeight: '50px',

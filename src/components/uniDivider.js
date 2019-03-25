@@ -1,4 +1,5 @@
 import React from 'react'
+import{ jsx, css } from "@emotion/core"
 import pic1 from '../images/uni1.png'
 import pic2 from '../images/uni2.png'
 import pic3 from '../images/uni3.png'
@@ -12,7 +13,7 @@ const ImgStyle = {
 }
 
 const UniDivider =  () => (
-    <div style={{
+    <div css={{
         display: 'flex',
         justifyContent: 'space-around',
         alignContent: 'center',
@@ -20,11 +21,11 @@ const UniDivider =  () => (
         padding: '0 5em'
 
     }}>
-        <img src={pic1} alt="Goldman Sachs logo" style={ImgStyle}/>
-        <img src={pic2} alt="Goldman Sachs logo" style={ImgStyle}/>
-        <img src={pic3} alt="Goldman Sachs logo" style={ImgStyle}/>
-        <img src={pic4} alt="Goldman Sachs logo" style={ImgStyle}/>
-        <img src={pic5} alt="Goldman Sachs logo" style={ImgStyle}/>
+        <img src={pic1} alt="Goldman Sachs logo" css={ImgStyle}/>
+        <img src={pic2} alt="Goldman Sachs logo" css={ImgStyle}/>
+        <img src={pic3} alt="Goldman Sachs logo" css={ImgStyle}/>
+        <img src={pic4} alt="Goldman Sachs logo" css={ImgStyle}/>
+        <img src={pic5} alt="Goldman Sachs logo" css={ImgStyle}/>
     </div>
 )
 

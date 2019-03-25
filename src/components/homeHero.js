@@ -1,5 +1,4 @@
 import React from "react"
-import { jsx, css } from '@emotion/core'
 import PryButton from "../components/pryButton"
 
 class HomeHero extends React.Component {
@@ -33,7 +32,7 @@ class HomeHero extends React.Component {
         }}
       >
         <h1
-          css={{
+        css={{
             color: "white",
             textAlign: "center",
             textTransform: "capitalize",
@@ -42,7 +41,7 @@ class HomeHero extends React.Component {
           {title}
         </h1>
         <p
-          css={{
+        css={{
             color: "white",
             textAlign: "center",
             margin: "0 auto",
@@ -52,7 +51,7 @@ class HomeHero extends React.Component {
           {text}
         </p>
         <div
-          css={{
+        css={{
             margin: "1em auto 0"
           }}
           onClick={this.openModal}

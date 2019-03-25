@@ -1,4 +1,5 @@
 import React from 'react'
+import{ jsx, css } from "@emotion/core"
 import PryButton from './pryButton';
 
 const flexCount = {
@@ -12,32 +13,32 @@ const flexCount = {
 
 const CountDivider =  () => (
 <div>
-    <div style={flexCount}>
-        <div style={{
+    <div css={flexCount}>
+        <div css={{
             flex: 1,
             textAlign: 'center',
             /*border: '2px solid red',*/
         }}>
-        <div style={{
+        <div css={{
             color: '#00a99d',
             fontWeight: 'bolder',
             fontSize: '40px',
             fontFamily: '"Aleo", serif',
             paddingBottom: '15px'
         }}> 3000+ </div>
-        <div style={{
+        <div css={{
             color: 'white',
             fontSize: '20px',
             fontFamily: '"Poppins", sans-serif'
         }}> Consulting Minutes </div>
         </div>
 
-        <div style={{
+        <div css={{
             flex: 1,
             textAlign: 'center',
             /*border: '2px solid red'*/
         }}>
-        <div style={{
+        <div css={{
             color: '#00a99d',
             fontSize: '30px',
             fontWeight: 'bolder',
@@ -45,19 +46,19 @@ const CountDivider =  () => (
             fontFamily: '"Aleo", serif',
             paddingBottom: '15px'
         }}> 100+ </div>
-        <div style={{
+        <div css={{
             color: 'white',
             fontSize: '20px',
             fontFamily: '"Poppins", sans-serif'
         }}> Consulting Satisfied </div>
         </div>
 
-        <div style={{
+        <div css={{
             flex: 1,
             textAlign: 'center',
             /*border: '2px solid red'*/
         }}>
-        <div style={{
+        <div css={{
             color: '#00a99d',
             fontSize: '30px',
             fontWeight: 'bolder',
@@ -65,7 +66,7 @@ const CountDivider =  () => (
             fontFamily: '"Aleo", serif',
             paddingBottom: '15px'
         }}> ~90% </div>
-        <div style={{
+        <div css={{
             color: 'white',
             fontSize: '20px',
             fontFamily: '"Poppins", sans-serif'

@@ -1,5 +1,6 @@
 import { Link } from "gatsby"
 import React from "react"
+import{ jsx, css } from "@emotion/core"
 import Image from "./logoImage"
 
 const Header = ({ siteTitle }) => (

@@ -101,7 +101,6 @@ const Footer = () => (
   margin: '0 auto'}}>
     © {new Date().getFullYear()}, Built By 
     <a href="https://www.phosmobile.org"> PhosMobile</a>
-    <h2 css={theme => ({ color: theme.color })}> HELLO FOOTER </h2>
     </div>
   </div>
 )

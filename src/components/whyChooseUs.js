@@ -1,10 +1,11 @@
 import React from "react"
+import{ jsx, css } from "@emotion/core"
 import ChooseUsCard from "./chooseUsCard"
 import PryButton from "./pryButton"
 
 const WhyChooseUs = ({ title, imgUrl }) => (
   <div
-    style={{
+    css={{
       background: `linear-gradient(295deg, rgba(0,169,157,0.5) 0%, rgba(0,169,157,1) 100%), ${imgUrl}`,
       paddingBottom: "5em",
       backgroundRepeat: 'no-repeat',
@@ -12,7 +13,7 @@ const WhyChooseUs = ({ title, imgUrl }) => (
     }}
   >
     <h2
-      style={{
+      css={{
         textAlign: "center",
         paddingTop: "2em",
         paddingBottom: "1em",
@@ -22,7 +23,7 @@ const WhyChooseUs = ({ title, imgUrl }) => (
       {title}
     </h2>
     <div
-      style={{
+      css={{
         width: "70%",
         margin: "0 auto",
         display: "flex",
@@ -48,7 +49,7 @@ const WhyChooseUs = ({ title, imgUrl }) => (
         imgUrl="./static/images/scores.svg"
       />
     </div>
-    <div style={{
+    <div css={{
         display: 'flex',
         margin: '0 auto',
         justifyContent: 'center',

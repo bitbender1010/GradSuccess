@@ -1,4 +1,5 @@
 import React from "react"
+import{ jsx, css } from "@emotion/core"
 import Layout from "../../components/layout"
 import HomeHero from "../../components/homeHero"
 import EssayReview from "../../components/essayReview"
@@ -30,7 +31,7 @@ class EssaysPage extends React.Component {
         term academic and professional goals"
           imgUrl="url('.././static/images/admissionsbg.jpg')"
         />
-        <div style={{
+        <div css={{
           display: 'flex',
           width: '30%',
           height: '70px',
@@ -40,14 +41,14 @@ class EssaysPage extends React.Component {
           alignItems: 'center',
           justifyContent: 'center'
         }}>
-        <div onClick={this.toggleTabs("review")} style={{
+        <div onClick={this.toggleTabs("review")} css={{
           height: '50px',
           width: '50%',
           border: 'none',
           outline: 'none',
           verticalAlign: 'middle'
         }}>
-          <button style={{
+          <button css={{
             border: 'none',
             height: '50px',
             width: '100%',
@@ -57,15 +58,15 @@ class EssaysPage extends React.Component {
             textAlign: 'center',
             outline: 'none',
             cursor: 'pointer'
-          }}> <h4 style={{marginBottom: '0px', color: this.state.reviewTab ? 'white' : '#19a99d'}}> Essay Review</h4> </button>
+          }}> <h4 css={{marginBottom: '0px', color: this.state.reviewTab ? 'white' : '#19a99d'}}> Essay Review</h4> </button>
         </div>
-        <div onClick={this.toggleTabs("redraft")} style={{
+        <div onClick={this.toggleTabs("redraft")} css={{
           height: '50px',
           width: '50%',
           border: 'none',
           outline: 'none'
         }}>
-          <button style={{
+          <button css={{
             height: '50px',
             width: '100%',
             background: 'black',
@@ -74,7 +75,7 @@ class EssaysPage extends React.Component {
             outline: 'none',
             verticalAlign: 'middle',
             cursor: 'pointer'
-          }}> <h4 style={{marginBottom: '0px', color: this.state.redraftTab ? 'white' : '#19a99d'}}> Essay Redraft </h4> </button>
+          }}> <h4 css={{marginBottom: '0px', color: this.state.redraftTab ? 'white' : '#19a99d'}}> Essay Redraft </h4> </button>
         </div>
         </div>
         {this.state.reviewTab && <div> <EssayReview /> </div>}

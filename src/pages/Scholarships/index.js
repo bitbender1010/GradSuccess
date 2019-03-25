@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import Modal from "react-responsive-modal"
+import{ jsx, css } from "@emotion/core"
 
 import Layout from "../../components/layout"
 import Image from "../../components/image"
@@ -53,7 +54,7 @@ class IndexPage extends React.Component {
         <UniDivider />
         <Steps />
         <FeaturedTestimonial />
-        <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
+        <div css={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
           <Image />
         </div>
         <Link to="/page-2/">Go to page 2</Link>

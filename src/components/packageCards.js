@@ -1,9 +1,10 @@
 import React from 'react'
+import{ jsx, css } from "@emotion/core"
 import PackageCardElement from './packageCardElement';
 
 
 const PackageCards = () => (
-    <div style={{
+    <div css={{
         width: '70%',
         display:'flex',
         alignContent: 'center',
