@@ -54,7 +54,7 @@ class IndexPage extends React.Component {
           with cutting-edge services ranging from reviews, redrafts and one-on-one coaching
           about preferred options."
         />
-        <PackageCards />
+        <PackageCards service="admissions"/>
         <UniDivider />
         <WhyChooseUs title="Why Choose Us For Your Admission Process" imgUrl="url('./static/images/admissionsbg.jpg')" />
         <FeaturedTestimonial />

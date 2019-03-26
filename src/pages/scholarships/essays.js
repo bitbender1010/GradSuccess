@@ -5,7 +5,7 @@ import HomeHero from "../../components/homeHero"
 import EssayReview from "../../components/essayReview"
 import EssayRedraft from "../../components/essayRedraft"
 
-class CompletePackage extends React.Component {
+class Scholarship extends React.Component {
   constructor(props) {
     super(props)
     this.state = { reviewTab: true, redraftTab: false }
@@ -26,7 +26,7 @@ class CompletePackage extends React.Component {
     return (
       <Layout>
         <HomeHero
-          title="Admissions Center - Complete Package"
+          title="Admissions Center - Essays"
           text="We help young graduates and career people achieve their long and short
         term academic and professional goals"
           imgUrl="url('.././static/images/admissionsbg.jpg')"
@@ -58,18 +58,32 @@ class CompletePackage extends React.Component {
             textAlign: 'center',
             outline: 'none',
             cursor: 'pointer'
-          }}> <h4 css={{marginBottom: '0px', color: this.state.reviewTab ? 'white' : '#19a99d'}}> Complete Package </h4> </button>
-        </div>  
-
-          {/* Removed second Tab */}
+          }}> <h4 css={{marginBottom: '0px', color: this.state.reviewTab ? 'white' : '#19a99d'}}> Essay Review</h4> </button>
+        </div>
+        <div onClick={this.toggleTabs("redraft")} css={{
+          height: '50px',
+          width: '50%',
+          border: 'none',
+          outline: 'none'
+        }}>
+          <button css={{
+            height: '50px',
+            width: '100%',
+            background: 'black',
+            opacity: '0.6',
+            border: 'none',
+            outline: 'none',
+            verticalAlign: 'middle',
+            cursor: 'pointer'
+          }}> <h4 css={{marginBottom: '0px', color: this.state.redraftTab ? 'white' : '#19a99d'}}> Essay Redraft </h4> </button>
+        </div>
         </div>
         {this.state.reviewTab && <div> <EssayReview /> </div>}
-        {/* {this.state.redraftTab && <div> <EssayRedraft /> </div>} */}
-
+        {this.state.redraftTab && <div> <EssayRedraft /> </div>}
       </Layout>
     )
   }
 }
 
 
-export default CompletePackage
+export default Scholarship

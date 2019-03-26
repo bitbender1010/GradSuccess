@@ -38,6 +38,7 @@ const steps = {
   fontWeight: 'bolder'
 }
 
+
 class Search extends React.Component {
   constructor(props) {
     super(props);
@@ -85,8 +86,8 @@ handleRedirect(event){
               textAlign: 'center'
             }}> Choose Your Program! </h2>
       <h3 for="program-select" css={steps}> STEP 1 </h3>
-
-      <select id="program-select" onChange={this.handleEnable} css={inputTab}>
+      
+      <select id="program-select" onChange={this.handleEnable} css={inputTab} >
           <option value="" selected disabled> Which program are you applying to? </option>
           <option value="admissions"> Admission </option>
           <option value="careers"> Career</option>
@@ -101,7 +102,7 @@ handleRedirect(event){
           <option value=""> What do you need help with? </option>
           <option value="essays"> Essay Review </option>
           <option value="cv-resume"> CV Redraft</option>
-          <option value="complete-packages"> Hello </option>
+          <option value="complete-packages"> Complete Packages </option>
       </select>
       
     </div>
