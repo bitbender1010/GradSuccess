@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import Modal from "react-responsive-modal"
 
 import Layout from "../components/layout"
@@ -31,28 +30,31 @@ class IndexPage extends React.Component {
   render() {
     const { open } = this.state
     return (
-      <Layout>
-        <SEO title="Home" keywords={[`success`, `application`, `university`]} />
-        <HomeHero
-          title="Get expert help with your applications"
-          text="We help young graduates and career people achieve their long and short
-        term academic and professional goals"
-          button="Get Started"
-          imgUrl="url('./static/images/bg-image.jpg')"
-          openModal={this.onOpenModal}
-        />
-        <TitleAndText
-          title="Apply With Confidence"
-          text="There is something very important that should be here that we do not have currently however, we're going to be putting it in very very soon"
+        <Layout>
+          <SEO
+            title="Home"
+            keywords={[`success`, `application`, `university`]}
           />
-        <UniDivider />
-        <Steps />
-        <FeaturedTestimonial />
-        <Modal open={open} onClose={this.onCloseModal} center>
-          <h2>Simple Modal here</h2>
-        </Modal>
-        <BigCountCTA />
-      </Layout>
+          <HomeHero
+            title="Get expert help with your applications"
+            text="We help young graduates and career people achieve their long and short
+        term academic and professional goals"
+            button="Get Started"
+            imgUrl="url('./static/images/bg-image.jpg')"
+            openModal={this.onOpenModal}
+          />
+          <TitleAndText
+            title="Apply With Confidence"
+            text="There is something very important that should be here that we do not have currently however, we're going to be putting it in very very soon"
+          />
+          <UniDivider />
+          <Steps />
+          <FeaturedTestimonial />
+          <Modal open={open} onClose={this.onCloseModal} center>
+            <h2>Simple Modal here</h2>
+          </Modal>
+          <BigCountCTA />
+        </Layout>
     )
   }
 }

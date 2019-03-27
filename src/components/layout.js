@@ -11,7 +11,8 @@ import { StaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import "./layout.css"
-import Footer from '../components/Footer'
+import Footer from "../components/Footer"
+import PageTransition from "gatsby-plugin-page-transitions"
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -27,10 +28,11 @@ const Layout = ({ children }) => (
     render={data => (
       <>
         <Header siteTitle={data.site.siteMetadata.title} />
-        <div
-        >
-          <main>{children}</main>
-          <Footer /> 
+        <div>
+          <PageTransition transitionTime={500}>
+            <main>{children}</main>
+          </PageTransition>
+          <Footer />
         </div>
       </>
     )}
