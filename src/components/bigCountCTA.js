@@ -2,10 +2,10 @@ import React from 'react'
 import CountDivider from '../components/countDivider'
 import LowerCTA from '../components/lowerCTA';
 
-const bigCountCTA = () => (
+const bigCountCTA = ({openModals}) => (
 <div>
     <CountDivider />
-    <LowerCTA />
+    <LowerCTA openModal={openModals} />
 </div>
 )
 

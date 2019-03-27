@@ -13,7 +13,18 @@ const slash = {
     fontWeight: 'bold'
 }
 
-const LowerCTA =  () => (
+class LowerCTA extends React.Component {
+constructor(props) {
+    super(props)
+    this.openModal = this.openModal.bind(this)
+  }
+    
+    openModal() {
+    this.props.openModal()
+    }
+    
+    render() {
+      return (
     <div>
     {/* Get Started */}
     <div css={lowerCount}>
@@ -32,7 +43,7 @@ const LowerCTA =  () => (
         ESSAY REVIEWS </h4> </div>
         <div css={{
             padding: '40px'
-        }}>
+        }} onClick={this.openModal}>
         <PryButton text="Get Started" />
         <button css={{
             border: '2px solid yellow',
@@ -46,5 +57,5 @@ const LowerCTA =  () => (
         }}> Learn More </button> </div>
     </div>
 </div>
-)
+)}}
     export default LowerCTA
