@@ -12,8 +12,9 @@ import Steps from "../../components/steps"
 import FeaturedTestimonial from "../../components/featuredTestimonial"
 import Footer from '../../components/Footer'
 import PackageCards from "../../components/packageCards"
-import WhyChooseUs from "../../components/whyChooseUs";
+import WhyChooseUs from "../../components/whyChooseUs"
 import SampleEssays from "../../components/sampleEssays"
+
 
 class IndexPage extends React.Component {
   constructor(props) {
