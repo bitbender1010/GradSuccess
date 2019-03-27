@@ -151,21 +151,13 @@ class IndexPage extends React.Component {
         />
         <UniDivider />
         <Steps />
-        <FeaturedTestimonial />
-        <div>
-          <Modal
-            open={open}
-            onClose={this.onCloseModal}
-            center
-            styles={{ modal }}
-          >
-            <div>
-              {" "}
-              <Search />{" "}
-            </div>
-          </Modal>
+        <FeaturedTestimonial openModal={this.onOpenModal}/>
+        <div> 
+        <Modal open={open} onClose={this.onCloseModal} center styles={{modal}}>
+          <div> <Search /> </div>
+        </Modal>
         </div>
-        <BigCountCTA />
+        <BigCountCTA openModals={this.onOpenModal}/>
       </Layout>
     )
   }

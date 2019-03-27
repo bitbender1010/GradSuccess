@@ -19,7 +19,18 @@ const ImgDivStyles = css({
     minHeight: '400px'
 })
 
-const FeaturedTestimonial =  () => (
+class FeaturedTestimonial extends React.Component {
+constructor(props) {
+    super(props)
+    this.openModal = this.openModal.bind(this)
+  }
+    
+  openModal() {
+    this.props.openModal()
+  }
+    
+  render() {
+      return(
     <div css={{
         display: 'flex',
         background: 'white',
@@ -41,9 +52,11 @@ const FeaturedTestimonial =  () => (
                 lineHeight: '1.4em',
                 textAlign: 'center'
             }}>Over 8 years of helping applicants fulfill their dreams.</h1>
+            <div onClick={this.openModal}>
             <PryButton text="Work With An Expert" />
+            </div>
         </div>
     </div>
-)
+)}}
 
 export default FeaturedTestimonial
