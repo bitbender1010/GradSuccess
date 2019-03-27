@@ -1,5 +1,6 @@
 import { Link } from "gatsby"
 import React from "react"
+import{ jsx, css } from "@emotion/core"
 import Image from "./logoImage"
 
 const Header = ({ siteTitle }) => (
@@ -7,7 +8,7 @@ const Header = ({ siteTitle }) => (
     <div>
       <Link to="/">
         <div
-          style={{
+          css={{
             width: "150px",
             margin: ".5em auto .1em",
           }}
@@ -16,7 +17,7 @@ const Header = ({ siteTitle }) => (
         </div>
       </Link>
       <ul
-        style={{
+        css={{
           display: "flex",
           listStyle: "none",
           justifyContent: "space-around",
@@ -29,12 +30,12 @@ const Header = ({ siteTitle }) => (
           marginBottom: '0'
         }}
       >
-        <Link to="/Admissions" activeStyle={{color: 'white'}} >Admissions</Link>
-        <Link to="/Careers" activeStyle={{color: 'white'}} >Job/Careers</Link>
-        <Link to="/Scholarships" activeStyle={{color: 'white'}} >Scholarships</Link>
-        <Link to="About" activeStyle={{color: 'white'}} >About Us</Link>
-        <Link to="Blog" activeStyle={{color: 'white'}} >Blog</Link>
-        <Link to="Contact" activeStyle={{color: 'white'}}>Contact</Link>
+        <Link to="/admissions" activeStyle={{color: 'white'}} >Admissions</Link>
+        <Link to="/careers" activeStyle={{color: 'white'}} >Job/Careers</Link>
+        <Link to="/scholarships" activeStyle={{color: 'white'}} >Scholarships</Link>
+        <Link to="about" activeStyle={{color: 'white'}} >About Us</Link>
+        <Link to="blog" activeStyle={{color: 'white'}} >Blog</Link>
+        <Link to="contact" activeStyle={{color: 'white'}}>Contact</Link>
       </ul>
     </div>
   </header>

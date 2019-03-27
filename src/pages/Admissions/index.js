@@ -53,19 +53,16 @@ class IndexPage extends React.Component {
           universities. Through our novel array of packages we are able to provide our clients
           with cutting-edge services ranging from reviews, redrafts and one-on-one coaching
           about preferred options."
-          />
-          <PackageCards />
-          <UniDivider />
-          <WhyChooseUs
-            title="Why Choose Us For Your Admission Process"
-            imgUrl="url('./static/images/admissionsbg.jpg')"
-          />
-          <FeaturedTestimonial />
-          <SampleEssays />
-          <Modal open={open} onClose={this.onCloseModal} center>
-            <h2>Simple Modal here</h2>
-          </Modal>
-        </Layout>
+        />
+        <PackageCards service="admissions"/>
+        <UniDivider />
+        <WhyChooseUs title="Why Choose Us For Your Admission Process" imgUrl="url('./static/images/admissionsbg.jpg')" />
+        <FeaturedTestimonial />
+        <SampleEssays />
+        <Modal open={open} onClose={this.onCloseModal} center>
+          <h2>Simple Modal here</h2>
+        </Modal>
+      </Layout>
     )
   }
 }

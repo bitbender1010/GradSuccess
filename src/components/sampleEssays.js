@@ -1,46 +1,47 @@
 import React from "react"
 import { Link } from "gatsby"
+import{ jsx, css } from "@emotion/core"
 import agenda from "../images/agenda.svg"
 import pdf from "../images/pdf.svg"
 import PryButton from "../components/pryButton"
 
 
 const SampleEssays = () => (
-<div style={{
+<div css={{
     padding: '30px 0px'
 }}>
-    <div style={{
+    <div css={{
         textAlign: 'center'
     }}> <h2> Read Our Sample Essays </h2> </div>
 
         {/* main box*/}
-    <div style={{
+    <div css={{
         display: 'flex',
         width: '70%',
         margin: '50px auto'
     }}>
-    <div style={{
+    <div css={{
         marginRight: '50px',
         padding: '50px',
         background: 'white'
     }}> 
-        <div style={{
+        <div css={{
             display: 'flex'
         }}> <div> <img src={agenda} alt="book"/> </div>
             <div>
             <div> <h3> Expository Essay </h3> </div>
-            <div style={{
+            <div css={{
                 display: 'flex'
             }}> <img src={pdf} /> <h5> View this sample </h5> </div>
             </div>
         
         </div>
 
-        <div style={{
+        <div css={{
             display: 'flex',
             fontFamily: 'popins'
         }}> 
-        <span style={{
+        <span css={{
             width: '200px',
             textAlign: 'right',
             paddingRight: '30px',
@@ -49,10 +50,10 @@ const SampleEssays = () => (
         </div>
 
         {/* second part*/}
-        <div style={{
+        <div css={{
             display: 'flex',
             fontFamily: 'popins'
-        }}> <span style={{
+        }}> <span css={{
             width: '200px',
             textAlign: 'right',
             paddingRight: '30px',
@@ -61,10 +62,10 @@ const SampleEssays = () => (
         </div>
 
         {/* second part*/}
-        <div style={{
+        <div css={{
             display: 'flex',
             fontFamily: 'popins'
-        }}> <span style={{
+        }}> <span css={{
             width: '200px',
             textAlign: 'right',
             paddingRight: '30px',
@@ -73,10 +74,10 @@ const SampleEssays = () => (
         </div>
 
         {/* second part*/}
-        <div style={{
+        <div css={{
             display: 'flex',
             fontFamily: 'popins'
-        }}> <span style={{
+        }}> <span css={{
             width: '200px',
             textAlign: 'right',
             paddingRight: '30px',
@@ -86,27 +87,27 @@ const SampleEssays = () => (
 </div>
 
         {/* *Second Part*/}
-        <div style={{
+        <div css={{
             padding: '50px',
             background: 'white'
         }}> 
-            <div style={{
+            <div css={{
                 display: 'flex'
             }}> <div> <img src={agenda} alt="book"/> </div>
                 <div>
                 <div> <h3> Expository Essay </h3> </div>
-                <div style={{
+                <div css={{
                     display: 'flex'
                 }}> <img src={pdf} /> <h5> View this sample </h5> </div>
                 </div>
             
             </div>
     
-            <div style={{
+            <div css={{
                 display: 'flex',
                 fontFamily: 'popins'
             }}> 
-            <span style={{
+            <span css={{
                 width: '200px',
                 textAlign: 'right',
                 paddingRight: '30px',
@@ -115,10 +116,10 @@ const SampleEssays = () => (
             </div>
     
             {/* second part*/}
-            <div style={{
+            <div css={{
                 display: 'flex',
                 fontFamily: 'popins'
-            }}> <span style={{
+            }}> <span css={{
                 width: '200px',
                 textAlign: 'right',
                 paddingRight: '30px',
@@ -127,10 +128,10 @@ const SampleEssays = () => (
             </div>
     
             {/* second part*/}
-            <div style={{
+            <div css={{
                 display: 'flex',
                 fontFamily: 'popins'
-            }}> <span style={{
+            }}> <span css={{
                 width: '200px',
                 textAlign: 'right',
                 paddingRight: '30px',
@@ -139,10 +140,10 @@ const SampleEssays = () => (
             </div>
     
             {/* second part*/}
-            <div style={{
+            <div css={{
                 display: 'flex',
                 fontFamily: 'popins'
-            }}> <span style={{
+            }}> <span css={{
                 width: '200px',
                 textAlign: 'right',
                 paddingRight: '30px',
