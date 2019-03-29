@@ -2,9 +2,9 @@ import React from "react"
 import Layout from "../components/layout"
 import HomeHero from "../components/homeHero"
 import AboutBox from "../components/aboutBox"
-import WhyChooseUs from "../components/whyChooseUs"
 import Team from "../components/team"
 import man from "../images/man.jpg"
+import  FeaturedTestimonial from "../components/featuredTestimonial"
 
 
 const text1 = '-- About Us'
@@ -27,7 +27,7 @@ class AboutUs extends React.Component {
       />
       <AboutBox first={text1} second={text2}/>
       {/* Breaker */}
-      <WhyChooseUs title="Why Choose Us For Your Admission Process" imgUrl="url('./static/images/admissionsbg.jpg')" />
+      <FeaturedTestimonial openModal={this.onOpenModal}/>
       <AboutBox first={text1} second={text2}/>
       <div>
       <h1 css={{textAlign: 'center'}}> Meet the Team </h1>
