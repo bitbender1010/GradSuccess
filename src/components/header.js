@@ -3,6 +3,15 @@ import React from "react"
 import{ jsx, css } from "@emotion/core"
 import Image from "./logoImage"
 
+
+
+const breakpoints = [375, 576, 768 ]
+
+const mq = breakpoints.map(
+    bp => `@media (max-width: ${bp}px)`
+  )
+
+
 const Header = ({ siteTitle }) => (
   <header>
     <div>
@@ -27,8 +36,11 @@ const Header = ({ siteTitle }) => (
           color: "white",
           fontWeight: "700",
           fontSize: ".9em",
-          marginBottom: '0'
+          marginBottom: '0',
+          [mq[2]]: {
+            fontSize: ".5em",
         }}
+        }
       >
         <Link to="/admissions" activeStyle={{color: 'white'}} >Admissions</Link>
         <Link to="/careers" activeStyle={{color: 'white'}} >Job/Careers</Link>

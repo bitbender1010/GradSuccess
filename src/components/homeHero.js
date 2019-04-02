@@ -36,6 +36,7 @@ class HomeHero extends React.Component {
             color: "white",
             textAlign: "center",
             textTransform: "capitalize",
+            padding: '10px'
           }}
         >
           {title}
@@ -45,7 +46,8 @@ class HomeHero extends React.Component {
             color: "white",
             textAlign: "center",
             margin: "0 auto",
-            maxWidth: "600px"
+            maxWidth: "600px",
+            padding: '10px'
           }}
         >
           {text}
