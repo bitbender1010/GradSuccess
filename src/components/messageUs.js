@@ -2,6 +2,14 @@ import React from "react"
 import { jsx, css } from "@emotion/core"
 import send from "../images/send.svg"
 
+
+const breakpoints = [375, 576, 768 ]
+
+const mq = breakpoints.map(
+    bp => `@media (max-width: ${bp}px)`
+  )
+
+
 const inputStyle = {
   background: "none",
   border: "none",
@@ -20,12 +28,13 @@ const pad = {
 const button = {
   width: "250px",
   borderRadius: "50px",
-  background: "blue",
+  background: "yellow",
   height: "60px",
   border: "none",
   outline: "none",
   justifySelf: "center",
-  color: "white",
+  color: "#111",
+  fontWeight: 'bold',
   fontFamily: "poppins",
   margin: "0px auto",
   cursor: "pointer",
@@ -33,11 +42,15 @@ const button = {
 
 const MessageUs = () => (
   <div>
-    <div css={{ margin: "100px", height: "700px" }}>
+    <div css={{ margin: "100px", height: "700px", [mq[2]]: {
+      margin: "30px 10px 0px 15px"
+  } }}>
       <h1> Let's Talk </h1>
       {/* */}
       <div css={{ display: "flex" }}>
-        <div css={{ width: "50%", height: "300px" }}>
+        <div css={{ width: "50%", height: "300px", [mq[2]]: {
+          width: "100%"
+      } }}>
           <p>
             {" "}
             We’d love to hear what you are working on. Drop us a note here and
@@ -92,11 +105,15 @@ const MessageUs = () => (
             background: "blue",
             alignItems: "flex-end",
             marginLeft: "50px",
+            [mq[2]]: {
+              display: 'none'
+          }
           }}
         >
           <img src="" />
         </div>
       </div>
+
     </div>
   </div>
 )

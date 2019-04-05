@@ -8,16 +8,24 @@ import fb from "../images/fb.svg"
 import tw from "../images/tw.svg"
 import ig from "../images/ig.svg"
 
+const breakpoints = [375, 576, 768 ]
+
+const mq = breakpoints.map(
+    bp => `@media (max-width: ${bp}px)`
+  )
+
+
 const slash = css({
   fontSize: "20px",
   fontWeight: "bold"
 })
 
 const iconRight = css({
-  marginRight: "20px"
+  margin: "0px 10px"
 })
 const Footer = () => (
-  <div css={{ margin: "0 auto" }}>
+  <div css={{ margin: "0 auto"}}>
+
     <div
       css={{
         display: "flex",
@@ -25,6 +33,10 @@ const Footer = () => (
         color: 'gray',
         width: "70%",
         paddingTop: "50px",
+        
+        [mq[2]]: {
+          flexWrap: 'wrap'
+      }
       }}
     >
       {" "}
@@ -32,6 +44,11 @@ const Footer = () => (
         css={{
           width: "60%",
           fontSize: "15px",
+          [mq[2]]: {
+            width: "100%",
+            order: 2,
+            marginBottom: '15px'
+        }
         }}
       >
         <div>
@@ -50,9 +67,14 @@ const Footer = () => (
           GradSuccess Suite A54 Prima-Tek Plaza Egbeda Lagos
         </div>
       </div>
+      {/* */}
       <div
         css={{
           width: "40%",
+          [mq[2]]: {
+            width: "100%",
+            marginBottom: '15px'
+        }
         }}
       >
         <div>
@@ -62,6 +84,9 @@ const Footer = () => (
                 width: "200px",
                 margin: ".5em auto .1em",
                 float: "right",
+                [mq[2]]: {
+                  float: "none"
+              }
               }}
             >
               <Image />
@@ -76,6 +101,10 @@ const Footer = () => (
             margin: "0px auto",
             display: "flex",
             justifyContent: "flex-start",
+            [mq[2]]: {
+              float: "none",
+              justifyContent: 'center'
+          }
           }}
         >
           {/*Social Icons butons*/}
@@ -97,11 +126,14 @@ const Footer = () => (
         </div>
       </div>
     </div>
+  
+
     <div css={{width: '70%',
-  margin: '0 auto'}}>
+  margin: '0 auto', paddingBottom: '10px'}}>
     © {new Date().getFullYear()}, Built By 
     <a href="https://www.phosmobile.org"> PhosMobile</a>
     </div>
+
   </div>
 )
 
