@@ -41,7 +41,7 @@ class IndexPage extends React.Component {
           title="Welcome to the Career Center"
           text="We help young graduates and career people achieve their long and short
         term academic and professional goals"
-          imgUrl="url('./static/images/admissionsbg.jpg')"
+          imgUrl="url('./static/images/careersbg.jpg')"
           openModal={this.onOpenModal}
         />
         <TitleAndText

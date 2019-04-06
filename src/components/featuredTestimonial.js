@@ -51,6 +51,10 @@ constructor(props) {
             textAlign: 'center'
         }
     }}>
+    <div css={{
+        display: 'flex',
+        flexWrap: 'wrap'
+    }}>
         <div css={{
             flex: 1,
             padding: '3em 5em 3em 0',
@@ -74,6 +78,7 @@ constructor(props) {
             <div onClick={this.openModal}>
             <PryButton text="Work With An Expert" />
             </div>
+        </div>
         </div>
     </div>
 )}}

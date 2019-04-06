@@ -4,7 +4,8 @@ import React from "react"
 const imgStyle = {
     width: '100%',
     height: '100%',
-    marginBottom: '0px'
+    marginBottom: '0px',
+    maxWidth: '400px'
 }
 
 const imgBox = {

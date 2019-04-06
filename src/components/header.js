@@ -45,7 +45,7 @@ const Header = ({ siteTitle }) => (
         <Link to="/admissions" activeStyle={{color: 'white'}} >Admissions</Link>
         <Link to="/careers" activeStyle={{color: 'white'}} >Job/Careers</Link>
         <Link to="/scholarships" activeStyle={{color: 'white'}} >Scholarships</Link>
-        <Link to="about" activeStyle={{color: 'white'}} >About Us</Link>
+        <Link to="about-us" activeStyle={{color: 'white'}} >About Us</Link>
         <Link to="blog" activeStyle={{color: 'white'}} >Blog</Link>
         <Link to="contact" activeStyle={{color: 'white'}}>Contact</Link>
       </ul>

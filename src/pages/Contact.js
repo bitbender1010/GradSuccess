@@ -11,15 +11,22 @@ class Contact extends React.Component {
   render() {
     return (
       <Layout>
-        <HomeHero
-          title="Welcome to the About Us"
-          text="We help young graduates and career people achieve their long and short
-      term academic and professional goals"
-          imgUrl="url('./static/images/admissionsbg.jpg')"
-          openModal={this.onOpenModal}
-        />
-        {/* Contact */}
-        <MessageUs />
+        
+          <HomeHero
+            title="Contact Us"
+            text="We are available for any questions you might have, just leave a message below and we'll get in touch with you"
+            imgUrl="url('./static/images/contactbg.jpg')"
+            openModal={this.onOpenModal}
+          />
+          <div
+          css={{
+            background: "white",
+            padding: "3em 1em",
+          }}
+        >
+          {/* Contact */}
+          <MessageUs />
+        </div>
       </Layout>
     )
   }

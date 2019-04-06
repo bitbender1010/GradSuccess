@@ -1,6 +1,7 @@
 import React from "react"
 import { jsx, css } from "@emotion/core"
 import send from "../images/send.svg"
+import contactpic from '../images/contactpic.jpg'
 
 
 const breakpoints = [375, 576, 768 ]
@@ -41,8 +42,11 @@ const button = {
 }
 
 const MessageUs = () => (
-  <div>
-    <div css={{ margin: "100px", height: "700px", [mq[2]]: {
+  <div css={{
+    maxWidth: '900px',
+    margin: '0 auto'
+  }}>
+    <div css={{  height: "700px", [mq[2]]: {
       margin: "30px 10px 0px 15px"
   } }}>
       <h1> Let's Talk </h1>
@@ -76,24 +80,15 @@ const MessageUs = () => (
                 margin-right: 5%;
               `}
             />
-            <input type="text" placeholder="Budget Range" css={inputStyle} />
             <input
               type="text"
-              placeholder="Where do you hear about us?"
+              placeholder="Message"
               css={css`
                 ${inputStyle};
                 width: 95%;
               `}
             />
             {/* Describe */}
-            <input
-              type="text"
-              placeholder="Describe your Project"
-              css={css`
-                ${inputStyle};
-                width: 95%;
-              `}
-            />
             <button css={button}> Send Message </button>
           </form>
         </div>
@@ -110,7 +105,7 @@ const MessageUs = () => (
           }
           }}
         >
-          <img src="" />
+          <img src={contactpic} />
         </div>
       </div>
 
